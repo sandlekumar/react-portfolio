@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Mono:wght@400;700&family=DM+Sans:wght@400;500;600&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #050714;
+  color: #e2e8f0;
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: #050714; }
+::-webkit-scrollbar-thumb { background: #38bdf8; border-radius: 2px; }
+
+.app { min-height: 100vh; }
+
+/* Shared section styles */
+.section-tag {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 3px;
+  color: #38bdf8;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  color: #f1f5f9;
+  margin: 0 0 1rem;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding: 2rem 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.25);
+  letter-spacing: 1.5px;
+}
+.footer strong {
+  color: rgba(255,255,255,0.5);
+  font-weight: 700;
+}
+
+/* Pulse animation used globally */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%       { transform: scale(1.6); opacity: 0.5; }
+}
+
+/* ── Global Mobile Fixes ── */
+@media (max-width: 860px) {
+  .section-title {
+    font-size: clamp(1.8rem, 7vw, 2.8rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .section-tag {
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+  }
+  .section-title {
+    font-size: clamp(1.6rem, 8vw, 2.2rem);
+  }
+  .footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 1.5rem 4vw;
+    font-size: 0.62rem;
+  }
+}
