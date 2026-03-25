@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "homepage": "https://yourusername.github.io/sandle-kumar-portfolio",
+  "homepage": "https://sandlekumar.github.io/react-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
