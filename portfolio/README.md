@@ -1,10 +1,9 @@
 # Sandle Kumar — MERN Stack Portfolio
 
-A modern, animated React portfolio built for freelance client attraction.
 
 ---
 
-## 🚀 Quick Start
+##  Start
 
 ```bash
 # 1. Install dependencies
@@ -24,7 +23,7 @@ npm run dev
 ```
 portfolio/
 ├── public/
-│   └── images/              ← 📸 ADD YOUR PROJECT SCREENSHOTS HERE
+│   └── images/              
 │       ├── car-booking.png
 │       ├── tea-shop.png
 │       ├── instagram.png
@@ -41,7 +40,7 @@ portfolio/
 │   │   └── Contact.jsx + .css
 │   │
 │   ├── data/
-│   │   └── portfolioData.js     ← ✏️ EDIT YOUR INFO HERE
+│   │   └── portfolioData.js     
 │   │
 │   ├── App.jsx
 │   ├── App.css
@@ -63,36 +62,6 @@ Edit **`src/data/portfolioData.js`** to update:
 
 ---
 
-## 📸 Add Your Project Images
-
-1. Take screenshots of your projects
-2. Save them as PNG files
-3. Place in `public/images/` folder with these exact names:
-   - `car-booking.png`
-   - `tea-shop.png`
-   - `instagram.png`
-   - `fitness.png`
-   - `portfolio.png`
-
-> If images are missing, a styled emoji placeholder shows automatically.
-
----
-
-## 👤 Add Your Profile Photo
-
-In `src/components/Hero.jsx`, find this line:
-```jsx
-src="https://api.dicebear.com/7.x/avataaars/svg?seed=SandleKumar..."
-```
-
-Replace with your photo path:
-```jsx
-src="/images/profile.jpg"
-```
-
-Then add your photo to `public/images/profile.jpg`
-
----
 
 ## 🌐 Deploy to Netlify (Free)
 
