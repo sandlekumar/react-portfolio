@@ -1,0 +1,5 @@
+[build]
+  # We do not need a build command because the dist folder is already built and committed
+  command = ""
+  # Tell Netlify to serve the built output instead of the raw source code!
+  publish = "portfolio/dist"
